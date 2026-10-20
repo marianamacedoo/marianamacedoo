@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="490" height="272" viewBox="0 0 490 272">
+<style>
+  .bg { fill: #fdfbf7; } .surface { fill: #ffffff; } .line { stroke: #ece6f2; }
+  .ink { fill: #2f2a3d; } .muted { fill: #6f6880; } .accent { fill: #7a5cd6; }
+  .chiptxt { fill: #2f2a3d; } .blob { opacity: .55; }
+  .serif { font-family: Georgia, 'Times New Roman', serif; } .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; } .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .fade { opacity: 0; animation: fade .8s ease forwards; }
+  @keyframes fade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #1c1a24; } .surface { fill: #252231; } .line { stroke: #36324a; }
+    .ink { fill: #f2eefb; } .muted { fill: #b2abc4; } .accent { fill: #c9b6ff; }
+    .blob { opacity: .2; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .fade { opacity: 1; } }
+</style>
+<defs><clipPath id="c"><rect width="490" height="272" rx="22"/></clipPath></defs>
+<g class="fade" style="animation-delay:0.25s">
+<rect class="surface line" x=".5" y=".5" width="489" height="271" rx="22" stroke-width="1"/>
+<g clip-path="url(#c)"><rect width="490" height="6" fill="#c9b6ff"><animate attributeName="height" values="6;6;272;272;6" keyTimes="0;.6;.7;.9;1" dur="9s" begin="0.25s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;.25;.25;1" keyTimes="0;.6;.7;.9;1" dur="9s" begin="0.25s" repeatCount="indefinite"/></rect></g>
+<text x="26" y="56" font-size="30">🤖</text>
+<text class="ink sans" x="26" y="92" font-size="18" font-weight="700">Inteligência Artificial</text>
+<text class="muted sans" x="26" y="120" font-size="14">Implementações e exercícios da disciplina de Inteligência</text><text class="muted sans" x="26" y="141" font-size="14">Artificial em Python.</text>
+<rect x="26" y="198" width="59" height="24" rx="12" fill="#c9b6ff"/><text class="chiptxt sans" x="56" y="214" font-size="12" text-anchor="middle">Python</text><rect x="91.2" y="198" width="32" height="24" rx="12" fill="#c9b6ff"/><text class="chiptxt sans" x="107" y="214" font-size="12" text-anchor="middle">IA</text>
+<text class="accent sans" x="26" y="250" font-size="13" font-weight="600">Ver no GitHub →</text>
+</g>
+</svg>
