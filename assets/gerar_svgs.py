@@ -224,10 +224,10 @@ def timeline():
 
 
 # ---------- cards de projeto ----------
-def card(emoji, t, desc, tags, c, delay):
-    w, h = 490, 272
-    tl = wrap(t, 38)
-    dl = wrap(desc, 58)[:3]
+def card(emoji, t, desc, tags, c, delay, w=490):
+    h = 272
+    tl = wrap(t, int(38 * w / 490))
+    dl = wrap(desc, int(58 * w / 490))[:3]
     ty = 92
     title_svg = "".join(f'<text class="ink sans" x="26" y="{ty+k*24}" font-size="18" font-weight="700">{escape(l)}</text>' for k, l in enumerate(tl))
     dy = ty + len(tl) * 24 + 4
@@ -250,6 +250,11 @@ def card(emoji, t, desc, tags, c, delay):
 </g>"""
     return svg(w, h, body, defs)
 
+
+TCC = ("🎓", "TCC 1 · Classificação automática de mensagens de erro em programação",
+       "Primeira etapa do meu TCC. Classifica erros de compilação em C pelo tópico de programação ligado ao erro, "
+       "como base para um sistema de recomendação educacional. Chegou a 94% de acurácia usando só a mensagem de erro.",
+       ["Machine Learning", "NLP", "scikit-learn", "TF-IDF"], "butter")
 
 PROJECTS = [
     ("bertimbau", "🏳️‍⚧️", "Detecção de discurso transfóbico com BERTimbau",
@@ -319,14 +324,6 @@ def contact():
     return svg(w, h, body, clip + BLUR)
 
 
-def footer():
-    w, h = 1000, 60
-    dots = "".join(
-        f'<circle cx="{410+i*30}" cy="20" r="6" fill="{c}"><animate attributeName="cy" values="20;12;20" dur="1.6s" begin="{i*.15:.2f}s" repeatCount="indefinite"/></circle>'
-        for i, c in enumerate(P.values()))
-    return svg(w, h, dots + '<text class="muted sans" x="500" y="52" font-size="13" text-anchor="middle">Feito com 💜 por Mariana Macedo</text>')
-
-
 def main():
     files = {
         "header.svg": header(),
@@ -338,12 +335,12 @@ def main():
         "trajetoria.svg": timeline(),
         "habilidades.svg": skills(),
         "contato.svg": contact(),
-        "rodape.svg": footer(),
         "btn-email.svg": button("✉️  E-mail", primary=True),
         "btn-linkedin.svg": button("LinkedIn"),
         "btn-portfolio.svg": button("🌐  Portfólio"),
         "btn-curriculo.svg": button("📄  Currículo"),
     }
+    files["projeto-tcc1.svg"] = card(*TCC, delay="0.1", w=990)
     for i, (slug, *args) in enumerate(PROJECTS):
         files[f"projeto-{slug}.svg"] = card(*args, delay=f"{.1 + (i % 2) * .15:.2f}")
     for name, content in files.items():

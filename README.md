@@ -19,6 +19,10 @@ Sou graduanda em **Ciência da Computação na UFOP**, com conclusão prevista p
 <img src="assets/titulo-projetos.svg" width="100%" alt="Projetos — Coisas que eu construí">
 
 <p align="center">
+  <a href="https://github.com/marianamacedoo/TCC1"><img src="assets/projeto-tcc1.svg" width="99%" alt="TCC 1: Classificação automática de mensagens de erro em programação"></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/marianamacedoo/transphobia-detection-bertimbau"><img src="assets/projeto-bertimbau.svg" width="49%" alt="Detecção de discurso transfóbico com BERTimbau"></a>
   <a href="https://github.com/marianamacedoo/transcricao-videos"><img src="assets/projeto-transcricao.svg" width="49%" alt="Transcrição de vídeos full-stack"></a>
   <a href="https://github.com/marianamacedoo/MineracaoDeDados"><img src="assets/projeto-mineracao.svg" width="49%" alt="Mineração de Dados"></a>
@@ -41,5 +45,3 @@ Sou graduanda em **Ciência da Computação na UFOP**, com conclusão prevista p
   <a href="https://marianamacedoo.github.io"><img src="assets/btn-portfolio.svg" height="46" alt="Portfólio"></a>
   <a href="https://marianamacedoo.github.io/curriculo-mariana-macedo.pdf"><img src="assets/btn-curriculo.svg" height="46" alt="Currículo"></a>
 </p>
-
-<img src="assets/rodape.svg" width="100%" alt="">
