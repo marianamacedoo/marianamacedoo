@@ -17,6 +17,75 @@ P = {
     "sky": "#bfe0ff", "butter": "#fff0b3", "rose": "#ffc8dd",
 }
 
+# idioma atual: "pt" (assets/) ou "en" (assets/en/)
+LANG = "pt"
+
+EN = {
+    "ciência de dados": "data science", "pipelines de ETL": "ETL pipelines", "visualização de dados": "data visualization",
+    "eu trabalho com ": "i work with ",
+    "Aberta a oportunidades em dados": "Open to data opportunities",
+    "Oi, eu sou a": "Hi, I'm",
+    "Ciência da Computação · UFOP  ·  Data Analytics · TerraLab": "Computer Science · UFOP  ·  Data Analytics · TerraLab",
+    "📍 Belo Horizonte": "📍 BH, Brazil",
+    "Sobre mim": "About me", "Dados, curiosidade e café": "Data, curiosity and coffee",
+    "Trajetória": "Journey", "Experiência & formação": "Experience & education",
+    "Projetos": "Projects", "Coisas que eu construí": "Things I've built",
+    "Habilidades": "Skills", "Minha caixa de ferramentas": "My toolbox",
+    "Ciência da Computação": "Computer Science",
+    "Intercâmbio em Industrial Data Science": "Exchange in Industrial Data Science",
+    "Laboratório TerraLab · atual": "TerraLab · current",
+    "Inglês avançado": "Advanced English", "Idiomas": "Languages",
+    "08/2026 — presente": "08/2026 — present",
+    "Laboratório TerraLab · UFOP": "TerraLab · UFOP",
+    "Pipelines de ETL em Python e SQL para grandes volumes de dados. Gestão de ambientes com Apache Airflow, Apache Doris e Apache Superset.":
+        "ETL pipelines in Python and SQL for large data volumes. Managing environments with Apache Airflow, Apache Doris and Apache Superset.",
+    "Intercâmbio Acadêmico · Industrial Data Science": "Academic Exchange · Industrial Data Science",
+    "Montanuniversität Leoben · Áustria": "Montanuniversität Leoben · Austria",
+    "Especialização prática em Ciência de Dados Industrial, Machine Learning aplicado e Otimização de Processos.":
+        "Hands-on specialization in Industrial Data Science, applied Machine Learning and Process Optimization.",
+    "Vice-Diretora": "Vice-President",
+    "Diretório Acadêmico de Ciência da Computação · UFOP": "Computer Science Student Association · UFOP",
+    "Organização de eventos acadêmicos e workshops técnicos, gestão de equipes e representação estudantil.":
+        "Organized academic events and technical workshops, managed teams and represented students.",
+    "Iniciação Científica · Automação e Pipelines de Dados": "Undergraduate Research · Data Automation and Pipelines",
+    "Automação de extração, tratamento e integração de dados em Python, com PostgreSQL para estruturação e consultas.":
+        "Automated data extraction, cleaning and integration in Python, with PostgreSQL for database design and queries.",
+    "Técnico em Informática": "IT Technician (technical high school degree)",
+    "Instituto Federal do Norte de Minas Gerais (IFNMG)": "Federal Institute of Northern Minas Gerais (IFNMG)",
+    "Ver no GitHub →": "View on GitHub →",
+    "TCC 1 · Classificação automática de mensagens de erro em programação": "Thesis I · Automatic classification of programming error messages",
+    "Primeira etapa do meu TCC. Classifica erros de compilação em C pelo tópico de programação ligado ao erro, "
+    "como base para um sistema de recomendação educacional. Chegou a 94% de acurácia usando só a mensagem de erro.":
+        "First stage of my undergraduate thesis. It classifies C compilation errors by the programming topic behind them, "
+        "as a basis for an educational recommender system. Reached 94% accuracy using only the error message.",
+    "Detecção de discurso transfóbico com BERTimbau": "Transphobic hate speech detection with BERTimbau",
+    "Fine-tuning do BERTimbau para classificar tweets como transfóbicos ou não. 93,1% de acurácia em validação balanceada.":
+        "Fine-tuned BERTimbau (Portuguese BERT) to classify tweets as transphobic or not. 93.1% accuracy on a balanced validation set.",
+    "Transcrição de vídeos full-stack": "Full-stack video transcription",
+    "Transcreve áudio e vídeo com upload assíncrono, autenticação, divisão de arquivos grandes e cotas diárias por usuário.":
+        "Transcribes audio and video with asynchronous upload, authentication, large-file splitting and daily per-user quotas.",
+    "Mineração de Dados": "Data Mining",
+    "Práticas da disciplina de Mineração de Dados: exploração, pré-processamento e modelagem em notebooks.":
+        "Data Mining course work: exploration, preprocessing and modeling in notebooks.",
+    "Inteligência Artificial": "Artificial Intelligence",
+    "Implementações e exercícios da disciplina de Inteligência Artificial em Python.":
+        "Implementations and exercises from the Artificial Intelligence course, in Python.",
+    "IA": "AI",
+    "Análise de dados": "Data analysis", "Estatística": "Statistics",
+    "Dados & SQL": "Data & SQL", "Modelagem relacional": "Relational modeling",
+    "Visualização & BI": "Visualization & BI", "Engenharia": "Engineering", "Linguagens": "Languages",
+    "✉️  E-mail": "✉️  Email", "🌐  Portfólio": "🌐  Portfolio", "📄  Currículo": "📄  Résumé (PT)",
+    "CONTATO": "CONTACT", "Vamos conversar?": "Let's talk?",
+    "Estou buscando oportunidades em ciência de dados. Fique à vontade para me chamar!":
+        "I'm looking for opportunities in data science. Feel free to reach out!",
+}
+
+
+def T(s):
+    """Traduz o texto quando estiver gerando a versão em inglês."""
+    return EN.get(s, s) if LANG == "en" else s
+
+
 # classes de cor com modo escuro, iguais às variáveis do site
 STYLE = f"""<style>
   .bg {{ fill: #fdfbf7; }} .surface {{ fill: #ffffff; }} .line {{ stroke: #ece6f2; }}
@@ -86,10 +155,10 @@ def header():
     clip, base = frame(w, h)
     avatar = base64.b64encode((OUT / "avatar.jpg").read_bytes()).decode()
 
-    words = ["ciência de dados", "pipelines de ETL", "machine learning", "NLP", "visualização de dados"]
+    words = [T(w) for w in ["ciência de dados", "pipelines de ETL", "machine learning", "NLP", "visualização de dados"]]
     n, slot = len(words), 3.2
     dur = n * slot
-    size, prefix = 20, "eu trabalho com "
+    size, prefix = 20, T("eu trabalho com ")
     x0 = 52 + text_w(prefix, size, "mono")
     cw = size * 0.6
     typed = []
@@ -135,15 +204,15 @@ def header():
   <rect class="surface line" x="52" y="44" width="296" height="34" rx="17" stroke-width="1"/>
   <circle cx="72" cy="61" r="9" fill="#6fcf97" opacity=".5"><animate attributeName="r" values="4;11;4" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0;0" dur="2s" repeatCount="indefinite"/></circle>
   <circle cx="72" cy="61" r="4" fill="#6fcf97"/>
-  <text class="muted sans" x="86" y="66" font-size="14">Aberta a oportunidades em dados</text>
+  <text class="muted sans" x="86" y="66" font-size="14">{T("Aberta a oportunidades em dados")}</text>
 </g>
-<text class="ink serif fade" style="animation-delay:.25s" x="52" y="138" font-size="44" font-weight="600">Oi, eu sou a</text>
+<text class="ink serif fade" style="animation-delay:.25s" x="52" y="138" font-size="44" font-weight="600">{T("Oi, eu sou a")}</text>
 <text class="serif fade" style="animation-delay:.4s" x="52" y="196" font-size="54" font-weight="600" fill="url(#name)">Mariana Macedo</text>
 <g class="fade" style="animation-delay:.6s">
   <text class="muted mono" x="52" y="254" font-size="{size}">{prefix}</text>
   {"".join(t for t in typed if t.startswith("<text"))}
   {cursor}
-  <text class="muted sans" x="52" y="300" font-size="15">Ciência da Computação · UFOP  ·  Data Analytics · TerraLab</text>
+  <text class="muted sans" x="52" y="300" font-size="15">{T("Ciência da Computação · UFOP  ·  Data Analytics · TerraLab")}</text>
 </g>
 <g class="fade" style="animation-delay:.3s">
   <g transform="translate(700,62)">
@@ -155,7 +224,7 @@ def header():
     <text class="ink sans" x="650" y="104" font-size="14" font-weight="600">🐍 Python + SQL</text></g>
   <g><animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="4s" begin="-2s" repeatCount="indefinite"/>
     <rect class="surface line" x="822" y="226" width="150" height="34" rx="14" stroke-width="1"/>
-    <text class="ink sans" x="836" y="248" font-size="14" font-weight="600">📍 Belo Horizonte</text></g>
+    <text class="ink sans" x="836" y="248" font-size="14" font-weight="600">{T("📍 Belo Horizonte")}</text></g>
 </g>"""
     return svg(w, h, body, defs)
 
@@ -164,8 +233,8 @@ def header():
 def title(eyebrow, heading, color):
     w, h = 1000, 96
     hw = text_w(heading, 34) * 1.02
-    body = f"""<text class="accent sans fade" x="4" y="26" font-size="13" font-weight="700" letter-spacing="2.4">{escape(eyebrow.upper())}</text>
-<text class="ink serif fade" style="animation-delay:.15s" x="2" y="68" font-size="34" font-weight="600">{escape(heading)}</text>
+    body = f"""<text class="accent sans fade" x="4" y="26" font-size="13" font-weight="700" letter-spacing="2.4">{escape(T(eyebrow).upper())}</text>
+<text class="ink serif fade" style="animation-delay:.15s" x="2" y="68" font-size="34" font-weight="600">{escape(T(heading))}</text>
 <path d="M4,84 q 12,-8 24,0 t 24,0 t 24,0 t 24,0 t 24,0" fill="none" stroke="{color}" stroke-width="4" stroke-linecap="round" stroke-dasharray="140" stroke-dashoffset="140">
   <animate attributeName="stroke-dashoffset" values="140;0;0;140" keyTimes="0;.25;.8;1" dur="6s" repeatCount="indefinite"/></path>"""
     return svg(w, h, body)
@@ -185,8 +254,8 @@ def facts():
   <rect class="surface line" x="{x+.5}" y="{y+.5}" width="495" height="80" rx="18" stroke-width="1"/>
   <rect x="{x+18}" y="{y+18}" width="44" height="44" rx="13" fill="{P[c]}"/>
   <text x="{x+40}" y="{y+48}" font-size="21" text-anchor="middle">{ic}</text>
-  <text class="ink sans" x="{x+78}" y="{y+37}" font-size="16" font-weight="700">{escape(t)}</text>
-  <text class="muted sans" x="{x+78}" y="{y+60}" font-size="14">{escape(sub)}</text>
+  <text class="ink sans" x="{x+78}" y="{y+37}" font-size="16" font-weight="700">{escape(T(t))}</text>
+  <text class="muted sans" x="{x+78}" y="{y+60}" font-size="14">{escape(T(sub))}</text>
 </g>""")
     return svg(w, h, "\n".join(out))
 
@@ -206,6 +275,7 @@ def timeline():
     ]
     y, out = 0, []
     for i, (when, t, where, desc, c) in enumerate(items):
+        when, t, where, desc = T(when), T(t), T(where), T(desc)
         lines = wrap(desc, 125) if desc else []
         ch = 92 + len(lines) * 21
         d = f"{.1+i*.15:.2f}"
@@ -226,6 +296,7 @@ def timeline():
 # ---------- cards de projeto ----------
 def card(emoji, t, desc, tags, c, delay, w=490):
     h = 272
+    t, desc, tags = T(t), T(desc), [T(x) for x in tags]
     tl = wrap(t, int(38 * w / 490))
     dl = wrap(desc, int(58 * w / 490))[:3]
     ty = 92
@@ -246,7 +317,7 @@ def card(emoji, t, desc, tags, c, delay, w=490):
 {title_svg}
 {desc_svg}
 {"".join(chips)}
-<text class="accent sans" x="26" y="{h-22}" font-size="13" font-weight="600">Ver no GitHub →</text>
+<text class="accent sans" x="26" y="{h-22}" font-size="13" font-weight="600">{T("Ver no GitHub →")}</text>
 </g>"""
     return svg(w, h, body, defs)
 
@@ -286,7 +357,7 @@ def skills():
         gx, gy = (i % 3) * (cw + gap), (i // 3) * (ch + gap)
         d = .1 + i * .1
         out.append(f'<g class="fade" style="animation-delay:{d:.1f}s"><rect class="surface line" x="{gx+.5}" y="{gy+.5}" width="{cw}" height="{ch}" rx="20" stroke-width="1"/>'
-                   f'<text class="ink sans" x="{gx+20}" y="{gy+36}" font-size="16" font-weight="700">{ic}  {escape(t)}</text>')
+                   f'<text class="ink sans" x="{gx+20}" y="{gy+36}" font-size="16" font-weight="700">{ic}  {escape(T(t))}</text>')
         x, y = gx + 20, gy + 54
         for k, chip in enumerate(chips):
             w = text_w(chip, 13) + 24
@@ -294,7 +365,7 @@ def skills():
                 x, y = gx + 20, y + 36
             out.append(f'<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="{(i*6+k)*.25:.2f}s" repeatCount="indefinite"/>'
                        f'<rect x="{x:.0f}" y="{y}" width="{w:.0f}" height="28" rx="14" fill="{P[c]}"/>'
-                       f'<text class="chiptxt sans" x="{x+w/2:.0f}" y="{y+19}" font-size="13" text-anchor="middle">{escape(chip)}</text></g>')
+                       f'<text class="chiptxt sans" x="{x+w/2:.0f}" y="{y+19}" font-size="13" text-anchor="middle">{escape(T(chip))}</text></g>')
             x += w + 8
         out.append("</g>")
     return svg(3 * cw + 2 * gap + 1, 2 * ch + gap + 1, "\n".join(out))
@@ -302,6 +373,7 @@ def skills():
 
 # ---------- botões de contato ----------
 def button(label, primary=False):
+    label = T(label)
     w = int(text_w(label, 15) + 48)
     h = 46
     if primary:
@@ -318,14 +390,26 @@ def contact():
     w, h = 1000, 210
     clip, base = frame(w, h)
     body = f"""{base}
-<text class="accent sans fade" x="500" y="64" font-size="13" font-weight="700" letter-spacing="2.4" text-anchor="middle">CONTATO</text>
-<text class="ink serif fade" style="animation-delay:.15s" x="500" y="114" font-size="38" font-weight="600" text-anchor="middle">Vamos conversar?</text>
-<text class="muted sans fade" style="animation-delay:.3s" x="500" y="156" font-size="16" text-anchor="middle">Estou buscando oportunidades em ciência de dados. Fique à vontade para me chamar!</text>"""
+<text class="accent sans fade" x="500" y="64" font-size="13" font-weight="700" letter-spacing="2.4" text-anchor="middle">{T("CONTATO")}</text>
+<text class="ink serif fade" style="animation-delay:.15s" x="500" y="114" font-size="38" font-weight="600" text-anchor="middle">{T("Vamos conversar?")}</text>
+<text class="muted sans fade" style="animation-delay:.3s" x="500" y="156" font-size="16" text-anchor="middle">{T("Estou buscando oportunidades em ciência de dados. Fique à vontade para me chamar!")}</text>"""
     return svg(w, h, body, clip + BLUR)
 
 
-def main():
+# ---------- seletor de idioma ----------
+def lang_switch():
+    w, h = 132, 36
+    on = 0 if LANG == "pt" else 1
+    body = f'''<rect class="surface line" x=".5" y=".5" width="{w-1}" height="{h-1}" rx="18" stroke-width="1"/>
+<rect x="{4 + on*62}" y="4" width="62" height="28" rx="14" fill="{P["lilac"]}"/>
+<text class="{'chiptxt' if on == 0 else 'muted'} sans" x="35" y="23" font-size="13" font-weight="700" text-anchor="middle">🇧🇷 PT</text>
+<text class="{'chiptxt' if on == 1 else 'muted'} sans" x="97" y="23" font-size="13" font-weight="700" text-anchor="middle">🇺🇸 EN</text>'''
+    return svg(w, h, body)
+
+
+def build():
     files = {
+        "idioma.svg": lang_switch(),
         "header.svg": header(),
         "titulo-sobre.svg": title("Sobre mim", "Dados, curiosidade e café", P["lilac"]),
         "titulo-trajetoria.svg": title("Trajetória", "Experiência & formação", P["mint"]),
@@ -343,9 +427,17 @@ def main():
     files["projeto-tcc1.svg"] = card(*TCC, delay="0.1", w=990)
     for i, (slug, *args) in enumerate(PROJECTS):
         files[f"projeto-{slug}.svg"] = card(*args, delay=f"{.1 + (i % 2) * .15:.2f}")
+    dest = OUT if LANG == "pt" else OUT / "en"
+    dest.mkdir(exist_ok=True)
     for name, content in files.items():
-        (OUT / name).write_text(content, encoding="utf-8")
-    print(f"{len(files)} SVGs gerados")
+        (dest / name).write_text(content, encoding="utf-8")
+    print(f"{len(files)} SVGs gerados em {dest.name}/")
+
+
+def main():
+    global LANG
+    for LANG in ("pt", "en"):
+        build()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1001" height="350" viewBox="0 0 1001 350">
+<style>
+  .bg { fill: #fdfbf7; } .surface { fill: #ffffff; } .line { stroke: #ece6f2; }
+  .ink { fill: #2f2a3d; } .muted { fill: #6f6880; } .accent { fill: #7a5cd6; }
+  .chiptxt { fill: #2f2a3d; } .blob { opacity: .55; }
+  .serif { font-family: Georgia, 'Times New Roman', serif; } .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; } .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .fade { opacity: 0; animation: fade .8s ease forwards; }
+  @keyframes fade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #1c1a24; } .surface { fill: #252231; } .line { stroke: #36324a; }
+    .ink { fill: #f2eefb; } .muted { fill: #b2abc4; } .accent { fill: #c9b6ff; }
+    .blob { opacity: .2; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .fade { opacity: 1; } }
+</style>
+<defs></defs>
+<g class="fade" style="animation-delay:0.1s"><rect class="surface line" x="0.5" y="0.5" width="322" height="166" rx="20" stroke-width="1"/><text class="ink sans" x="20" y="36" font-size="16" font-weight="700">📈  Data analysis</text>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="0.00s" repeatCount="indefinite"/><rect x="20" y="54" width="64" height="28" rx="14" fill="#c9b6ff"/><text class="chiptxt sans" x="52" y="73" font-size="13" text-anchor="middle">Python</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="0.25s" repeatCount="indefinite"/><rect x="92" y="54" width="68" height="28" rx="14" fill="#c9b6ff"/><text class="chiptxt sans" x="126" y="73" font-size="13" text-anchor="middle">Pandas</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="0.50s" repeatCount="indefinite"/><rect x="168" y="54" width="60" height="28" rx="14" fill="#c9b6ff"/><text class="chiptxt sans" x="198" y="73" font-size="13" text-anchor="middle">NumPy</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="0.75s" repeatCount="indefinite"/><rect x="236" y="54" width="31" height="28" rx="14" fill="#c9b6ff"/><text class="chiptxt sans" x="252" y="73" font-size="13" text-anchor="middle">R</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="1.00s" repeatCount="indefinite"/><rect x="20" y="90" width="91" height="28" rx="14" fill="#c9b6ff"/><text class="chiptxt sans" x="65" y="109" font-size="13" text-anchor="middle">Statistics</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="1.25s" repeatCount="indefinite"/><rect x="119" y="90" width="46" height="28" rx="14" fill="#c9b6ff"/><text class="chiptxt sans" x="141" y="109" font-size="13" text-anchor="middle">ETL</text></g>
+</g>
+<g class="fade" style="animation-delay:0.2s"><rect class="surface line" x="339.5" y="0.5" width="322" height="166" rx="20" stroke-width="1"/><text class="ink sans" x="359" y="36" font-size="16" font-weight="700">🧠  Machine Learning</text>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="1.50s" repeatCount="indefinite"/><rect x="359" y="54" width="98" height="28" rx="14" fill="#bdebd7"/><text class="chiptxt sans" x="408" y="73" font-size="13" text-anchor="middle">scikit-learn</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="1.75s" repeatCount="indefinite"/><rect x="465" y="54" width="75" height="28" rx="14" fill="#bdebd7"/><text class="chiptxt sans" x="502" y="73" font-size="13" text-anchor="middle">PyTorch</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="2.00s" repeatCount="indefinite"/><rect x="548" y="54" width="46" height="28" rx="14" fill="#bdebd7"/><text class="chiptxt sans" x="571" y="73" font-size="13" text-anchor="middle">NLP</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="2.25s" repeatCount="indefinite"/><rect x="359" y="90" width="64" height="28" rx="14" fill="#bdebd7"/><text class="chiptxt sans" x="391" y="109" font-size="13" text-anchor="middle">TF-IDF</text></g>
+</g>
+<g class="fade" style="animation-delay:0.3s"><rect class="surface line" x="678.5" y="0.5" width="322" height="166" rx="20" stroke-width="1"/><text class="ink sans" x="698" y="36" font-size="16" font-weight="700">🗄️  Data &amp; SQL</text>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="3.00s" repeatCount="indefinite"/><rect x="698" y="54" width="46" height="28" rx="14" fill="#bfe0ff"/><text class="chiptxt sans" x="721" y="73" font-size="13" text-anchor="middle">SQL</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="3.25s" repeatCount="indefinite"/><rect x="752" y="54" width="93" height="28" rx="14" fill="#bfe0ff"/><text class="chiptxt sans" x="799" y="73" font-size="13" text-anchor="middle">PostgreSQL</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="3.50s" repeatCount="indefinite"/><rect x="698" y="90" width="153" height="28" rx="14" fill="#bfe0ff"/><text class="chiptxt sans" x="774" y="109" font-size="13" text-anchor="middle">Relational modeling</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="3.75s" repeatCount="indefinite"/><rect x="859" y="90" width="65" height="28" rx="14" fill="#bfe0ff"/><text class="chiptxt sans" x="891" y="109" font-size="13" text-anchor="middle">Airflow</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="4.00s" repeatCount="indefinite"/><rect x="698" y="126" width="105" height="28" rx="14" fill="#bfe0ff"/><text class="chiptxt sans" x="750" y="145" font-size="13" text-anchor="middle">Apache Doris</text></g>
+</g>
+<g class="fade" style="animation-delay:0.4s"><rect class="surface line" x="0.5" y="183.5" width="322" height="166" rx="20" stroke-width="1"/><text class="ink sans" x="20" y="219" font-size="16" font-weight="700">📊  Visualization &amp; BI</text>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="4.50s" repeatCount="indefinite"/><rect x="20" y="237" width="75" height="28" rx="14" fill="#ffd3b8"/><text class="chiptxt sans" x="58" y="256" font-size="13" text-anchor="middle">Power BI</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="4.75s" repeatCount="indefinite"/><rect x="103" y="237" width="79" height="28" rx="14" fill="#ffd3b8"/><text class="chiptxt sans" x="143" y="256" font-size="13" text-anchor="middle">Superset</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="5.00s" repeatCount="indefinite"/><rect x="190" y="237" width="80" height="28" rx="14" fill="#ffd3b8"/><text class="chiptxt sans" x="230" y="256" font-size="13" text-anchor="middle">Matplotlib</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="5.25s" repeatCount="indefinite"/><rect x="20" y="273" width="72" height="28" rx="14" fill="#ffd3b8"/><text class="chiptxt sans" x="56" y="292" font-size="13" text-anchor="middle">Jupyter</text></g>
+</g>
+<g class="fade" style="animation-delay:0.5s"><rect class="surface line" x="339.5" y="183.5" width="322" height="166" rx="20" stroke-width="1"/><text class="ink sans" x="359" y="219" font-size="16" font-weight="700">⚙️  Engineering</text>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="6.00s" repeatCount="indefinite"/><rect x="359" y="237" width="83" height="28" rx="14" fill="#ffc8dd"/><text class="chiptxt sans" x="401" y="256" font-size="13" text-anchor="middle">Git/GitHub</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="6.25s" repeatCount="indefinite"/><rect x="450" y="237" width="68" height="28" rx="14" fill="#ffc8dd"/><text class="chiptxt sans" x="484" y="256" font-size="13" text-anchor="middle">Docker</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="6.50s" repeatCount="indefinite"/><rect x="526" y="237" width="57" height="28" rx="14" fill="#ffc8dd"/><text class="chiptxt sans" x="554" y="256" font-size="13" text-anchor="middle">Flask</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="6.75s" repeatCount="indefinite"/><rect x="359" y="273" width="83" height="28" rx="14" fill="#ffc8dd"/><text class="chiptxt sans" x="400" y="292" font-size="13" text-anchor="middle">REST APIs</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="7.00s" repeatCount="indefinite"/><rect x="450" y="273" width="68" height="28" rx="14" fill="#ffc8dd"/><text class="chiptxt sans" x="484" y="292" font-size="13" text-anchor="middle">Node.js</text></g>
+</g>
+<g class="fade" style="animation-delay:0.6s"><rect class="surface line" x="678.5" y="183.5" width="322" height="166" rx="20" stroke-width="1"/><text class="ink sans" x="698" y="219" font-size="16" font-weight="700">💬  Languages</text>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="7.50s" repeatCount="indefinite"/><rect x="698" y="237" width="64" height="28" rx="14" fill="#fff0b3"/><text class="chiptxt sans" x="730" y="256" font-size="13" text-anchor="middle">Python</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="7.75s" repeatCount="indefinite"/><rect x="770" y="237" width="46" height="28" rx="14" fill="#fff0b3"/><text class="chiptxt sans" x="793" y="256" font-size="13" text-anchor="middle">SQL</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="8.00s" repeatCount="indefinite"/><rect x="824" y="237" width="31" height="28" rx="14" fill="#fff0b3"/><text class="chiptxt sans" x="840" y="256" font-size="13" text-anchor="middle">R</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="8.25s" repeatCount="indefinite"/><rect x="863" y="237" width="60" height="28" rx="14" fill="#fff0b3"/><text class="chiptxt sans" x="894" y="256" font-size="13" text-anchor="middle">C/C++</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="8.50s" repeatCount="indefinite"/><rect x="932" y="237" width="53" height="28" rx="14" fill="#fff0b3"/><text class="chiptxt sans" x="958" y="256" font-size="13" text-anchor="middle">Java</text></g>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3s" begin="8.75s" repeatCount="indefinite"/><rect x="698" y="273" width="90" height="28" rx="14" fill="#fff0b3"/><text class="chiptxt sans" x="743" y="292" font-size="13" text-anchor="middle">JavaScript</text></g>
+</g>
+</svg>

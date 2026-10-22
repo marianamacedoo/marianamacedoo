@@ -1,3 +1,5 @@
+<p align="right"><a href="https://github.com/marianamacedoo/marianamacedoo/blob/main/README.en.md"><img src="assets/idioma.svg" height="36" alt="Português | Read in English"></a></p>
+
 <p align="center">
   <a href="https://marianamacedoo.github.io"><img src="assets/header.svg" width="100%" alt="Oi, eu sou a Mariana Macedo — eu trabalho com ciência de dados"></a>
 </p>
