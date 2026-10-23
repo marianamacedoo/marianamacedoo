@@ -27,7 +27,7 @@ EN = {
     "Oi, eu sou a": "Hi, I'm",
     "Ciência da Computação · UFOP  ·  Data Analytics · TerraLab": "Computer Science · UFOP  ·  Data Analytics · TerraLab",
     "📍 Belo Horizonte": "📍 BH, Brazil",
-    "Sobre mim": "About me", "Dados, curiosidade e café": "Data, curiosity and coffee",
+    "Sobre mim": "About me", "Dados e curiosidade": "Data and curiosity",
     "Trajetória": "Journey", "Experiência & formação": "Experience & education",
     "Projetos": "Projects", "Coisas que eu construí": "Things I've built",
     "Habilidades": "Skills", "Minha caixa de ferramentas": "My toolbox",
@@ -411,7 +411,7 @@ def build():
     files = {
         "idioma.svg": lang_switch(),
         "header.svg": header(),
-        "titulo-sobre.svg": title("Sobre mim", "Dados, curiosidade e café", P["lilac"]),
+        "titulo-sobre.svg": title("Sobre mim", "Dados e curiosidade", P["lilac"]),
         "titulo-trajetoria.svg": title("Trajetória", "Experiência & formação", P["mint"]),
         "titulo-projetos.svg": title("Projetos", "Coisas que eu construí", P["rose"]),
         "titulo-habilidades.svg": title("Habilidades", "Minha caixa de ferramentas", P["sky"]),

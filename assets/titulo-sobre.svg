@@ -15,7 +15,7 @@
 </style>
 <defs></defs>
 <text class="accent sans fade" x="4" y="26" font-size="13" font-weight="700" letter-spacing="2.4">SOBRE MIM</text>
-<text class="ink serif fade" style="animation-delay:.15s" x="2" y="68" font-size="34" font-weight="600">Dados, curiosidade e café</text>
+<text class="ink serif fade" style="animation-delay:.15s" x="2" y="68" font-size="34" font-weight="600">Dados e curiosidade</text>
 <path d="M4,84 q 12,-8 24,0 t 24,0 t 24,0 t 24,0 t 24,0" fill="none" stroke="#c9b6ff" stroke-width="4" stroke-linecap="round" stroke-dasharray="140" stroke-dashoffset="140">
   <animate attributeName="stroke-dashoffset" values="140;0;0;140" keyTimes="0;.25;.8;1" dur="6s" repeatCount="indefinite"/></path>
 </svg>
