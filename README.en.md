@@ -45,5 +45,5 @@ I'm a **Computer Science undergraduate at UFOP** (Federal University of Ouro Pre
   <a href="mailto:marimacedosantos@gmail.com"><img src="assets/en/btn-email.svg" height="46" alt="Email"></a>
   <a href="https://www.linkedin.com/in/mariana-macedo-7b9ab3227"><img src="assets/en/btn-linkedin.svg" height="46" alt="LinkedIn"></a>
   <a href="https://marianamacedoo.github.io/?lang=en"><img src="assets/en/btn-portfolio.svg" height="46" alt="Portfolio"></a>
-  <a href="https://marianamacedoo.github.io/curriculo-mariana-macedo.pdf"><img src="assets/en/btn-curriculo.svg" height="46" alt="Résumé (Portuguese)"></a>
+  <a href="https://marianamacedoo.github.io/resume-mariana-macedo.pdf"><img src="assets/en/btn-curriculo.svg" height="46" alt="Résumé"></a>
 </p>

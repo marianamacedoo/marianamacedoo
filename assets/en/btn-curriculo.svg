@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="153" height="46" viewBox="0 0 153 46">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="46" viewBox="0 0 115 46">
 <style>
   .bg { fill: #fdfbf7; } .surface { fill: #ffffff; } .line { stroke: #ece6f2; }
   .ink { fill: #2f2a3d; } .muted { fill: #6f6880; } .accent { fill: #7a5cd6; }
@@ -14,5 +14,5 @@
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .fade { opacity: 1; } }
 </style>
 <defs></defs>
-<rect class="surface line" x=".5" y=".5" width="152" height="45" rx="22.5" stroke-width="1"/><text class="ink sans" x="76.5" y="29" font-size="15" font-weight="600" text-anchor="middle">📄  Résumé (PT)</text>
+<rect class="surface line" x=".5" y=".5" width="114" height="45" rx="22.5" stroke-width="1"/><text class="ink sans" x="57.5" y="29" font-size="15" font-weight="600" text-anchor="middle">📄  Résumé</text>
 </svg>

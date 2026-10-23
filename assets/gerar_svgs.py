@@ -74,7 +74,7 @@ EN = {
     "Análise de dados": "Data analysis", "Estatística": "Statistics",
     "Dados & SQL": "Data & SQL", "Modelagem relacional": "Relational modeling",
     "Visualização & BI": "Visualization & BI", "Engenharia": "Engineering", "Linguagens": "Languages",
-    "✉️  E-mail": "✉️  Email", "🌐  Portfólio": "🌐  Portfolio", "📄  Currículo": "📄  Résumé (PT)",
+    "✉️  E-mail": "✉️  Email", "🌐  Portfólio": "🌐  Portfolio", "📄  Currículo": "📄  Résumé",
     "CONTATO": "CONTACT", "Vamos conversar?": "Let's talk?",
     "Estou buscando oportunidades em ciência de dados. Fique à vontade para me chamar!":
         "I'm looking for opportunities in data science. Feel free to reach out!",
