@@ -21,6 +21,10 @@ I'm a **Computer Science undergraduate at UFOP** (Federal University of Ouro Pre
 <img src="assets/en/titulo-projetos.svg" width="100%" alt="Projects — Things I've built">
 
 <p align="center">
+  <a href="https://github.com/marianamacedoo/pipeline-indicadores-br"><img src="assets/en/projeto-pipeline.svg" width="99%" alt="Brazilian economic indicators pipeline"></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/marianamacedoo/TCC1"><img src="assets/en/projeto-tcc1.svg" width="99%" alt="Thesis I: Automatic classification of programming error messages"></a>
 </p>
 

@@ -21,6 +21,10 @@ Sou graduanda em **Ciência da Computação na UFOP**, com conclusão prevista p
 <img src="assets/titulo-projetos.svg" width="100%" alt="Projetos — Coisas que eu construí">
 
 <p align="center">
+  <a href="https://github.com/marianamacedoo/pipeline-indicadores-br"><img src="assets/projeto-pipeline.svg" width="99%" alt="Pipeline de indicadores econômicos do Brasil"></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/marianamacedoo/TCC1"><img src="assets/projeto-tcc1.svg" width="99%" alt="TCC 1: Classificação automática de mensagens de erro em programação"></a>
 </p>
 

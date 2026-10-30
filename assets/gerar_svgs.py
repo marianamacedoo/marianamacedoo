@@ -53,6 +53,9 @@ EN = {
     "Técnico em Informática": "IT Technician (technical high school degree)",
     "Instituto Federal do Norte de Minas Gerais (IFNMG)": "Federal Institute of Northern Minas Gerais (IFNMG)",
     "Ver no GitHub →": "View on GitHub →",
+    "Pipeline de indicadores econômicos do Brasil": "Brazilian economic indicators pipeline",
+    'Busca todo dia cinco indicadores na API do Banco Central (dólar, Selic, IPCA, IGP-M e desemprego), organiza em camadas num data warehouse PostgreSQL e entrega um dashboard no Superset. Carga incremental e idempotente, tudo com um docker compose up.':
+        'Fetches five indicators from the Central Bank of Brazil API every day (USD/BRL, Selic, IPCA, IGP-M, unemployment), organizes them in layers in a PostgreSQL data warehouse and delivers a Superset dashboard. Incremental, idempotent loads, all with one docker compose up.',
     "TCC 1 · Classificação automática de mensagens de erro em programação": "Thesis I · Automatic classification of programming error messages",
     "Primeira etapa do meu TCC. Classifica erros de compilação em C pelo tópico de programação ligado ao erro, "
     "como base para um sistema de recomendação educacional. Chegou a 94% de acurácia usando só a mensagem de erro.":
@@ -322,6 +325,10 @@ def card(emoji, t, desc, tags, c, delay, w=490):
     return svg(w, h, body, defs)
 
 
+PIPELINE = ("📈", "Pipeline de indicadores econômicos do Brasil",
+            'Busca todo dia cinco indicadores na API do Banco Central (dólar, Selic, IPCA, IGP-M e desemprego), organiza em camadas num data warehouse PostgreSQL e entrega um dashboard no Superset. Carga incremental e idempotente, tudo com um docker compose up.',
+            ["Airflow", "PostgreSQL", "SQL", "Superset", "Docker"], "sky")
+
 TCC = ("🎓", "TCC 1 · Classificação automática de mensagens de erro em programação",
        "Primeira etapa do meu TCC. Classifica erros de compilação em C pelo tópico de programação ligado ao erro, "
        "como base para um sistema de recomendação educacional. Chegou a 94% de acurácia usando só a mensagem de erro.",
@@ -424,6 +431,7 @@ def build():
         "btn-portfolio.svg": button("🌐  Portfólio"),
         "btn-curriculo.svg": button("📄  Currículo"),
     }
+    files["projeto-pipeline.svg"] = card(*PIPELINE, delay="0.1", w=990)
     files["projeto-tcc1.svg"] = card(*TCC, delay="0.1", w=990)
     for i, (slug, *args) in enumerate(PROJECTS):
         files[f"projeto-{slug}.svg"] = card(*args, delay=f"{.1 + (i % 2) * .15:.2f}")
