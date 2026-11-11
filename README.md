@@ -1,12 +1,12 @@
 <p align="right"><a href="https://github.com/marianamacedoo/marianamacedoo/blob/main/README.pt.md"><img src="assets/en/idioma.svg" height="36" alt="Ler em português | English"></a></p>
 
 <p align="center">
-  <a href="https://marianamacedoo.github.io/?lang=en"><img src="assets/en/header.svg" width="100%" alt="Hi, I'm Mariana Macedo — I work with data science"></a>
+  <a href="https://marianamacedoo.github.io/?lang=en"><img src="assets/en/header.svg" width="100%" alt="Hi, I'm Mariana Macedo — I like to turn data into answers"></a>
 </p>
 
 <img src="assets/en/titulo-sobre.svg" width="100%" alt="About me — Data and curiosity">
 
-I'm a **Computer Science undergraduate at UFOP** (Federal University of Ouro Preto, Brazil), graduating in December 2026, and my goal is to work in **data science**. I did an exchange semester in **Industrial Data Science** at Montanuniversität Leoben, Austria, and today I work in the **Data Analytics team at TerraLab**, taking care of ETL pipelines and data infrastructure. I also enjoy working with people: I was vice-president of the Computer Science Student Association.
+I'm a **Computer Science undergraduate at UFOP** (Federal University of Ouro Preto, Brazil), graduating in December 2026. I have a special interest in **data**, but I enjoy technology as a whole. I did an exchange semester in **Industrial Data Science** at Montanuniversität Leoben, Austria, and today I work in the **Data Analytics team at TerraLab**, taking care of ETL pipelines and data infrastructure. I also enjoy working with people: I was vice-president of the Computer Science Student Association.
 
 <img src="assets/en/fatos.svg" width="100%" alt="Computer Science (UFOP), exchange in Industrial Data Science (Leoben), Data Analytics (TerraLab), advanced English">
 

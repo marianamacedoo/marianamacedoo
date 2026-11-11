@@ -21,9 +21,11 @@ P = {
 LANG = "pt"
 
 EN = {
-    "ciência de dados": "data science", "pipelines de ETL": "ETL pipelines", "visualização de dados": "data visualization",
-    "eu trabalho com ": "i work with ",
-    "Aberta a oportunidades em dados": "Open to data opportunities",
+    "transformar dados em respostas": "turn data into answers", "automatizar processos": "automate processes",
+    "construir sistemas": "build systems", "resolver problemas com tecnologia": "solve problems with technology",
+    "aprender coisas novas": "learn new things",
+    "eu gosto de ": "i like to ",
+    "Aberta a oportunidades em tecnologia e dados": "Open to opportunities in tech and data",
     "Oi, eu sou a": "Hi, I'm",
     "Ciência da Computação · UFOP  ·  Data Analytics · TerraLab": "Computer Science · UFOP  ·  Data Analytics · TerraLab",
     "📍 Belo Horizonte": "📍 BH, Brazil",
@@ -79,8 +81,8 @@ EN = {
     "Visualização & BI": "Visualization & BI", "Engenharia": "Engineering", "Linguagens": "Languages",
     "✉️  E-mail": "✉️  Email", "🌐  Portfólio": "🌐  Portfolio", "📄  Currículo": "📄  Résumé",
     "CONTATO": "CONTACT", "Vamos conversar?": "Let's talk?",
-    "Estou buscando oportunidades em ciência de dados. Fique à vontade para me chamar!":
-        "I'm looking for opportunities in data science. Feel free to reach out!",
+    "Estou aberta a vagas júnior em tecnologia. Fique à vontade para me chamar!":
+        "I'm open to junior roles in tech. Feel free to reach out!",
 }
 
 
@@ -158,10 +160,11 @@ def header():
     clip, base = frame(w, h)
     avatar = base64.b64encode((OUT / "avatar.jpg").read_bytes()).decode()
 
-    words = [T(w) for w in ["ciência de dados", "pipelines de ETL", "machine learning", "NLP", "visualização de dados"]]
+    words = [T(w) for w in ["transformar dados em respostas", "automatizar processos", "construir sistemas",
+                            "resolver problemas com tecnologia", "aprender coisas novas"]]
     n, slot = len(words), 3.2
     dur = n * slot
-    size, prefix = 20, T("eu trabalho com ")
+    size, prefix = 20, T("eu gosto de ")
     x0 = 52 + text_w(prefix, size, "mono")
     cw = size * 0.6
     typed = []
@@ -204,10 +207,10 @@ def header():
             + "".join(t for t in typed if t.startswith("<clipPath")))
     body = f"""{base}
 <g class="fade" style="animation-delay:.1s">
-  <rect class="surface line" x="52" y="44" width="296" height="34" rx="17" stroke-width="1"/>
+  <rect class="surface line" x="52" y="44" width="{text_w(T("Aberta a oportunidades em tecnologia e dados"), 14) + 54:.0f}" height="34" rx="17" stroke-width="1"/>
   <circle cx="72" cy="61" r="9" fill="#6fcf97" opacity=".5"><animate attributeName="r" values="4;11;4" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0;0" dur="2s" repeatCount="indefinite"/></circle>
   <circle cx="72" cy="61" r="4" fill="#6fcf97"/>
-  <text class="muted sans" x="86" y="66" font-size="14">{T("Aberta a oportunidades em dados")}</text>
+  <text class="muted sans" x="86" y="66" font-size="14">{T("Aberta a oportunidades em tecnologia e dados")}</text>
 </g>
 <text class="ink serif fade" style="animation-delay:.25s" x="52" y="138" font-size="44" font-weight="600">{T("Oi, eu sou a")}</text>
 <text class="serif fade" style="animation-delay:.4s" x="52" y="196" font-size="54" font-weight="600" fill="url(#name)">Mariana Macedo</text>
@@ -399,7 +402,7 @@ def contact():
     body = f"""{base}
 <text class="accent sans fade" x="500" y="64" font-size="13" font-weight="700" letter-spacing="2.4" text-anchor="middle">{T("CONTATO")}</text>
 <text class="ink serif fade" style="animation-delay:.15s" x="500" y="114" font-size="38" font-weight="600" text-anchor="middle">{T("Vamos conversar?")}</text>
-<text class="muted sans fade" style="animation-delay:.3s" x="500" y="156" font-size="16" text-anchor="middle">{T("Estou buscando oportunidades em ciência de dados. Fique à vontade para me chamar!")}</text>"""
+<text class="muted sans fade" style="animation-delay:.3s" x="500" y="156" font-size="16" text-anchor="middle">{T("Estou aberta a vagas júnior em tecnologia. Fique à vontade para me chamar!")}</text>"""
     return svg(w, h, body, clip + BLUR)
 
 

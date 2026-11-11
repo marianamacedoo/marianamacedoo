@@ -1,12 +1,12 @@
 <p align="right"><a href="https://github.com/marianamacedoo"><img src="assets/idioma.svg" height="36" alt="Português | Read in English"></a></p>
 
 <p align="center">
-  <a href="https://marianamacedoo.github.io"><img src="assets/header.svg" width="100%" alt="Oi, eu sou a Mariana Macedo — eu trabalho com ciência de dados"></a>
+  <a href="https://marianamacedoo.github.io"><img src="assets/header.svg" width="100%" alt="Oi, eu sou a Mariana Macedo — eu gosto de transformar dados em respostas"></a>
 </p>
 
 <img src="assets/titulo-sobre.svg" width="100%" alt="Sobre mim — Dados e curiosidade">
 
-Sou graduanda em **Ciência da Computação na UFOP**, com conclusão prevista para dezembro de 2026, e meu objetivo é atuar em **ciência de dados**. Fiz intercâmbio em **Industrial Data Science** na Montanuniversität Leoben, na Áustria, e hoje atuo no setor de **Data Analytics do Laboratório TerraLab**, cuidando de pipelines de ETL e infraestrutura de dados. Também gosto de trabalhar com pessoas: fui vice-diretora do Diretório Acadêmico de Ciência da Computação.
+Sou graduanda em **Ciência da Computação na UFOP**, com conclusão prevista para dezembro de 2026. Tenho interesse especial em **dados**, mas gosto de tecnologia como um todo. Fiz intercâmbio em **Industrial Data Science** na Montanuniversität Leoben, na Áustria, e hoje atuo no setor de **Data Analytics do Laboratório TerraLab**, cuidando de pipelines de ETL e infraestrutura de dados. Também gosto de trabalhar com pessoas: fui vice-diretora do Diretório Acadêmico de Ciência da Computação.
 
 <img src="assets/fatos.svg" width="100%" alt="Ciência da Computação (UFOP), intercâmbio em Industrial Data Science (Leoben), Data Analytics (TerraLab), inglês avançado">
 
