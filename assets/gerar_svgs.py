@@ -358,7 +358,7 @@ def skills():
     groups = [("📈", "Análise de dados", ["Python", "Pandas", "NumPy", "R", "Estatística", "ETL"], "lilac"),
               ("🧠", "Machine Learning", ["scikit-learn", "PyTorch", "NLP", "TF-IDF"], "mint"),
               ("🗄️", "Dados & SQL", ["SQL", "PostgreSQL", "Modelagem relacional", "Airflow", "Apache Doris"], "sky"),
-              ("📊", "Visualização & BI", ["Power BI", "Superset", "Matplotlib", "Jupyter"], "peach"),
+              ("📊", "Visualização & BI", ["Excel", "Power BI", "Superset", "Matplotlib", "Jupyter"], "peach"),
               ("⚙️", "Engenharia", ["Git/GitHub", "Docker", "Flask", "REST APIs", "Node.js"], "rose"),
               ("💬", "Linguagens", ["Python", "SQL", "R", "C/C++", "Java", "JavaScript"], "butter")]
     cw, ch, gap = 322, 166, 17
